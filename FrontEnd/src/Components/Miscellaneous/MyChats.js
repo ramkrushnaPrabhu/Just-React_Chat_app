@@ -19,7 +19,7 @@ const MyChats = ({fetchagain}) => {
         },
       };
       const { data } = await axios.get(
-        "http://localhost:8000/api/chat/",
+        "https://ramk-just-react-chat-app.herokuapp.com/api/chat/",
         config
       );
       setChats(data);

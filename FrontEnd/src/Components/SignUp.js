@@ -99,7 +99,7 @@ const SignUp = () => {
         },
       };
       const { data } = await axios.post(
-        "http://localhost:8000/api/user/",
+        "https://ramk-just-react-chat-app.herokuapp.com/api/user/",
         { name, email, password, pic },
         config
       );

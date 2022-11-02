@@ -43,7 +43,7 @@ const GroupChatModal = ({ children }) => {
         },
       };
       const { data } = await axios.get(
-        `http://localhost:8000/api/user?search=${search}`,
+        `https://ramk-just-react-chat-app.herokuapp.com/api/user?search=${search}`,
         config
       );
       setloading(false);
@@ -79,7 +79,7 @@ const GroupChatModal = ({ children }) => {
         },
       };
       const { data } = await axios.post(
-        `http://localhost:8000/api/chat/group`,
+        `https://ramk-just-react-chat-app.herokuapp.com/api/chat/group`,
         {
           name: groupChatName,
           users: JSON.stringify(selectedUsers.map((u) => u._id)),

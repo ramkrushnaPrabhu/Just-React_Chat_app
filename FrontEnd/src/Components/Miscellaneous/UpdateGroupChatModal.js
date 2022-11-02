@@ -54,7 +54,7 @@ const UpdateGroupChatModal = ({ fetchagain, setFetchagain, fetchMessage }) => {
         },
       };
       const { data } = await axios.put(
-        "http://localhost:8000/api/chat/groupremove",
+        "https://ramk-just-react-chat-app.herokuapp.com/api/chat/groupremove",
         {
           chatId: selectedChat._id,
           userId: query._id,
@@ -112,7 +112,7 @@ const UpdateGroupChatModal = ({ fetchagain, setFetchagain, fetchMessage }) => {
       };
 
       const { data } = await axios.put(
-        "http://localhost:8000/api/chat/groupadd",
+        "https://ramk-just-react-chat-app.herokuapp.com/api/chat/groupadd",
         {
           chatId: selectedChat._id,
           userId: query._id,
@@ -149,7 +149,7 @@ const UpdateGroupChatModal = ({ fetchagain, setFetchagain, fetchMessage }) => {
         },
       };
       const { data } = await axios.put(
-        "http://localhost:8000/api/chat/rename",
+        "https://ramk-just-react-chat-app.herokuapp.com/api/chat/rename",
         {
           chatId: selectedChat._id,
           chatName: groupChatName,
@@ -188,7 +188,7 @@ const UpdateGroupChatModal = ({ fetchagain, setFetchagain, fetchMessage }) => {
         },
       };
       const { data } = await axios.get(
-        `http://localhost:8000/api/user?search=${search}`,
+        `https://ramk-just-react-chat-app.herokuapp.com/api/user?search=${search}`,
         config
       );
       setloading(false);

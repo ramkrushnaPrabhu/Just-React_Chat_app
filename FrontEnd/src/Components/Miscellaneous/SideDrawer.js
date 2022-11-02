@@ -87,7 +87,7 @@ const SideDrawer = () => {
       };
 
       const { data } = await axios.get(
-        `http://localhost:8000/api/user?search=${search}`,
+        `https://ramk-just-react-chat-app.herokuapp.com/api/user?search=${search}`,
         config
       );
       setLoading(false);
@@ -114,7 +114,7 @@ const SideDrawer = () => {
         },
       };
       const { data } = await axios.post(
-        `http://localhost:8000/api/chat/`,
+        `https://ramk-just-react-chat-app.herokuapp.com/api/chat/`,
         { userId },
         config
       );

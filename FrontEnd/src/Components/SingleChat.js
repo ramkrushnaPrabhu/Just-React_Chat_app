@@ -55,7 +55,7 @@ const SingleChat = ({ fetchagain, setFetchagain }) => {
       };
       setLoading(true);
       const { data } = await axios.get(
-        `http://localhost:8000/api/message/${selectedChat._id}`,
+        `https://ramk-just-react-chat-app.herokuapp.com/api/message/${selectedChat._id}`,
         config
       );
 
@@ -118,7 +118,7 @@ const SingleChat = ({ fetchagain, setFetchagain }) => {
         };
 
         const { data } = await axios.post(
-          "http://localhost:8000/api/message/",
+          "https://ramk-just-react-chat-app.herokuapp.com/api/message/",
           {
             content: newMessage,
             chatId: selectedChat._id,

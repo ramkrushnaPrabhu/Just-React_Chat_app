@@ -42,7 +42,7 @@ const Login = () => {
         },
       };
       const { data } = await axios.post(
-        "http://localhost:8000/api/user/login",
+        "https://ramk-just-react-chat-app.herokuapp.com/api/user/login",
         { email, password },
         config
       );
