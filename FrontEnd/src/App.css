@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&family=Montserrat:wght@300&family=Work+Sans:wght@300&display=swap");
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  background-image: url("../videoblocks-social-media-messaging-on-a-dark-blue-background-sms-e-mail-chat-messaging-concept_hc-ibs9vb_thumbnail-1080_01.png");
+  background-size: cover;
+  background-position: center;
+  color: black;
+}
+
+/* ::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.281);
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #555;
+} */
