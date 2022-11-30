@@ -8,7 +8,7 @@ const accessChat = asyncHandler(async (req, res) => {
   if (!userId) {
     return res.sendStatus(400);
   }
-
+  
   var isChat = await Chat.find({
     isGroupChat: false,
     $and: [
